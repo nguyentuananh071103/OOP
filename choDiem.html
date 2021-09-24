@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class hocVien {
+      ten
+      diem
+
+      constructor(ten, diem) {
+          this.ten = ten
+          this.diem = diem
+      }
+      lamBai(){
+          this.diem += 2
+      }
+      ghiNote(){
+          this.diem += 1
+      }
+      choDiem(nguoiNhan, xDiem){
+          this.diem = this.diem - xDiem
+          nguoiNhan.diem += xDiem
+      }
+      xuatThongTin(){
+          return 'Ten:'+ 'this.ten + co diem la' + 'this.diem'
+      }
+  }
+</script>
+</body>
+</html>

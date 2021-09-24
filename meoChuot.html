@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Meo {
+        ten;
+        mau;
+        constructor(ten, mau) {
+            this.ten = ten;
+            this.mau = mau;
+        }
+        biLua() {
+            this.mau -= 2
+        }xuatThongTin() {
+            return this.ten + " có " + this.mau + " máu"
+        }
+    }
+    class Chuot {
+        ten;
+        mau;
+        constructor(ten, mau) {
+            this.ten = ten;
+            this.mau = mau
+        }
+        biCao() {
+            this.mau -= 1
+        }xuatThongTin() {
+            return this.ten + " có " + this.mau + " máu"
+        }
+
+    }
+    let Meo1 = new Meo("Tom", 10)
+    let Meo2 = new Meo("Ocgy", 10)
+    let Chuot1 = new Chuot("Jerry", 10)
+    Meo1.biLua(Chuot1)
+    Meo2.biLua(Chuot1)
+    Chuot1.biCao(Meo1)
+    Chuot1.biCao(Meo2)
+    alert(Meo1.xuatThongTin());
+    alert(Meo2.xuatThongTin());
+    alert(Chuot1.xuatThongTin());
+
+</script>
+</body>
+</html>

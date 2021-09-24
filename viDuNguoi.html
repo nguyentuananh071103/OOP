@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class People {
+      name
+      height
+      weight
+
+      constructor(a, b, c) {
+          this.name = a
+          this.height = b
+          this.weight = c
+      }
+      greeting(x){
+          alert(x)
+      }
+      learn(){
+          alert('hoc tiep thoi')
+      }
+  }
+  let people1 = new People('Anh', '2m','55kg')
+  let people2 = new People('Em', '3m','100kg')
+  document.write(people1.name)
+  document.write(people2.name)
+  people1.greeting('helo ae')
+</script>
+</body>
+</html>
